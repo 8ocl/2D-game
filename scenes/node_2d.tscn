@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://djag35fa5luy6"]
+[gd_scene load_steps=73 format=3 uid="uid://djag35fa5luy6"]
 
 [ext_resource type="Script" path="res://2D-game/script/CharacterBody2D.gd" id="1_50nw3"]
 [ext_resource type="Texture2D" uid="uid://bm48b5bx543a8" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_left_attack.png" id="2_0yjba"]
@@ -459,9 +459,13 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gcyy0"]
+radius = 6.0
+height = 20.0
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tnr5l"]
-radius = 8.5
-height = 22.0
+radius = 5.0
+height = 18.0
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rd6r1"]
 
@@ -480,12 +484,18 @@ script = ExtResource("1_50nw3")
 texture_filter = 1
 texture_repeat = 1
 sprite_frames = SubResource("SpriteFrames_nh62v")
-animation = &"right_walk"
-frame_progress = 0.879883
+animation = &"left_attack"
+frame_progress = 0.698184
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+[node name="Normal_Hitbox" type="CollisionShape2D" parent="player"]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_gcyy0")
+debug_color = Color(0.788235, 0.929412, 1, 0.419608)
+
+[node name="Hitbox" type="CollisionShape2D" parent="player"]
 position = Vector2(0, 2)
 shape = SubResource("CapsuleShape2D_tnr5l")
+debug_color = Color(0.988235, 0, 0.305882, 0.419608)
 
 [node name="ground" type="StaticBody2D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_rd6r1")
