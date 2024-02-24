@@ -267,7 +267,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_oot0k")
 }],
-"loop": false,
+"loop": true,
 "name": &"left_attack",
 "speed": 12.0
 }, {
@@ -284,7 +284,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_u7uee")
 }],
-"loop": false,
+"loop": true,
 "name": &"left_hit",
 "speed": 12.0
 }, {
@@ -374,7 +374,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8n3pg")
 }],
-"loop": false,
+"loop": true,
 "name": &"right_attack",
 "speed": 12.0
 }, {
@@ -391,7 +391,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dw6ex")
 }],
-"loop": false,
+"loop": true,
 "name": &"right_hit",
 "speed": 12.0
 }, {
@@ -504,7 +504,6 @@ texture_filter = 1
 texture_repeat = 1
 sprite_frames = SubResource("SpriteFrames_nh62v")
 animation = &"left_attack"
-autoplay = "right_idle"
 
 [node name="Normal_Hitbox" type="CollisionShape2D" parent="player"]
 position = Vector2(0, 2)
