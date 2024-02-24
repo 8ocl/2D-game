@@ -23,11 +23,11 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	# animation
-	if velocity.x < 0:
+	if attacking == false && velocity.x < 0:
 		animated_sprite_2d.play("left_walk")
 		ray_cast_2d.rotation = 90
 		animation_playing = true
-	elif velocity.x > 0:
+	elif attacking == false && velocity.x > 0:
 		animated_sprite_2d.play("right_walk")
 		ray_cast_2d.rotation = -90
 		animation_playing = true
@@ -53,8 +53,12 @@ func _physics_process(delta):
 			animated_sprite_2d.play("right_attack")
 
 	if attacking:
+		velocity.x = 0
 		if animated_sprite_2d.animation == "right_attack" and animated_sprite_2d.frame >= 5:
 			attacking = false
+			velocity.x = direction
 		elif animated_sprite_2d.animation == "left_attack" and animated_sprite_2d.frame >= 5:
 			attacking = false
+
+
 	move_and_slide()
