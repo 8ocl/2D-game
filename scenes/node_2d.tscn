@@ -1,15 +1,326 @@
-[gd_scene load_steps=74 format=3 uid="uid://djag35fa5luy6"]
+[gd_scene load_steps=140 format=3 uid="uid://djag35fa5luy6"]
 
 [ext_resource type="Script" path="res://2D-game/script/CharacterBody2D.gd" id="1_50nw3"]
+[ext_resource type="Script" path="res://2D-game/script/player.gd" id="1_ede6r"]
 [ext_resource type="Texture2D" uid="uid://bm48b5bx543a8" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_left_attack.png" id="2_0yjba"]
+[ext_resource type="Texture2D" uid="uid://dlk6m0xncd14n" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00000.png" id="2_mewp2"]
+[ext_resource type="Texture2D" uid="uid://ng4jpq3mait4" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00000.png" id="2_qhwph"]
+[ext_resource type="Texture2D" uid="uid://ct4k07yrnhtle" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00001.png" id="3_2x64i"]
 [ext_resource type="Texture2D" uid="uid://dckcc2wbqn64p" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_left_hit.png" id="3_30s1a"]
+[ext_resource type="Texture2D" uid="uid://dski0vhawx6nb" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00001.png" id="3_nldu4"]
+[ext_resource type="Texture2D" uid="uid://j6cv7bj7vgwk" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00002.png" id="4_7uobg"]
 [ext_resource type="Texture2D" uid="uid://bengbahq1kgmd" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_left_idle.png" id="4_veb5f"]
+[ext_resource type="Texture2D" uid="uid://bs8wluhd2wrv1" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00002.png" id="4_y8vqi"]
+[ext_resource type="Texture2D" uid="uid://brm1wbpm5wery" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00003.png" id="5_4jsij"]
+[ext_resource type="Texture2D" uid="uid://dwunnscbe01ns" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00003.png" id="5_6w7r6"]
 [ext_resource type="Texture2D" uid="uid://bduhsvixr2iiw" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_left_walk.png" id="5_cfruc"]
+[ext_resource type="Texture2D" uid="uid://chyxx4msbhkki" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00004.png" id="6_aurot"]
+[ext_resource type="Texture2D" uid="uid://ubk18fmsi4f6" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00004.png" id="6_wessi"]
 [ext_resource type="Texture2D" uid="uid://biepr8wamjcwl" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_right_attack.png" id="6_wmnap"]
 [ext_resource type="Texture2D" uid="uid://c8h4767vufyw3" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_right_hit.png" id="7_p0oe7"]
+[ext_resource type="Texture2D" uid="uid://c0udrtua01ow5" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00005.png" id="7_x4mou"]
+[ext_resource type="Texture2D" uid="uid://bhajft50kni1c" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00005.png" id="7_yrc6c"]
 [ext_resource type="Texture2D" uid="uid://4dkwqeluel2" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_right_idle.png" id="8_5pmjx"]
+[ext_resource type="Texture2D" uid="uid://6amq58pjdauj" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00006.png" id="8_be0uc"]
+[ext_resource type="Texture2D" uid="uid://cuq3niqt24ipt" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00006.png" id="8_ksbk0"]
+[ext_resource type="Texture2D" uid="uid://rasx0yax2443" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00007.png" id="9_2w7lb"]
+[ext_resource type="Texture2D" uid="uid://bne7u4ihim7ta" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00007.png" id="9_4qnym"]
 [ext_resource type="Texture2D" uid="uid://unm0w85odg8k" path="res://2D-game/sprite/[player] Pixelarium Starter Pack! - life saver/Side animations/spr_player_right_walk.png" id="9_fqm3d"]
-[ext_resource type="Texture2D" uid="uid://ndwpjuh7nsrq" path="res://2D-game/sprite/New Piskel.png" id="10_vml3k"]
+[ext_resource type="Texture2D" uid="uid://den7qfr5btj0w" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00008.png" id="10_ggyig"]
+[ext_resource type="Texture2D" uid="uid://cjhqsaxmgh4f4" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00008.png" id="10_q4qdy"]
+[ext_resource type="Texture2D" uid="uid://ndwpjuh7nsrq" path="res://2D-game/sprite/tilests/New Piskel.png" id="10_vml3k"]
+[ext_resource type="Texture2D" uid="uid://ly5itaafd75i" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00009.png" id="11_cw4jy"]
+[ext_resource type="Texture2D" uid="uid://derykbbricyk7" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00009.png" id="11_ydmfl"]
+[ext_resource type="Texture2D" uid="uid://dmoppnm51hca3" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00010.png" id="12_pu7gk"]
+[ext_resource type="Texture2D" uid="uid://c7s2falwqe7ij" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00010.png" id="12_tut07"]
+[ext_resource type="Texture2D" uid="uid://yrqabd1amvbo" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00011.png" id="13_lpkxf"]
+[ext_resource type="Texture2D" uid="uid://jhlnawjlm8ty" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00011.png" id="13_scsrs"]
+[ext_resource type="Texture2D" uid="uid://oebl3bsdmt7g" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00012.png" id="14_c5fn8"]
+[ext_resource type="Texture2D" uid="uid://dx0oqegvo3k5m" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00012.png" id="14_h6udw"]
+[ext_resource type="Texture2D" uid="uid://cpwlx7npbhi5a" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00013.png" id="15_gbsee"]
+[ext_resource type="Texture2D" uid="uid://coeyhdwdpsc5g" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00013.png" id="15_x5aae"]
+[ext_resource type="Texture2D" uid="uid://d8j1e7wt8wk2" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00014.png" id="16_otmrq"]
+[ext_resource type="Texture2D" uid="uid://j6lbt7o33mfa" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00014.png" id="16_ox5fu"]
+[ext_resource type="Texture2D" uid="uid://bxtgdp28g3gya" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00015.png" id="17_3styn"]
+[ext_resource type="Texture2D" uid="uid://dkh0aqvr2pr6i" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/Dash2/DashBlue_00015.png" id="17_8alyg"]
+[ext_resource type="Texture2D" uid="uid://pnmetwo2xohh" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00016.png" id="18_o7y4i"]
+[ext_resource type="Texture2D" uid="uid://ccyg5jx6enh5y" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00017.png" id="19_mykjd"]
+[ext_resource type="Texture2D" uid="uid://boagtwmwmeob1" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00018.png" id="20_v3jkm"]
+[ext_resource type="Texture2D" uid="uid://4yifkqm63waa" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00019.png" id="21_oe3ss"]
+[ext_resource type="Texture2D" uid="uid://bymx5brpdjrym" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00000.png" id="38_hf21i"]
+[ext_resource type="Texture2D" uid="uid://cdqttblqklwyv" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00001.png" id="39_vognb"]
+[ext_resource type="Texture2D" uid="uid://bl4kwuusowbyp" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00002.png" id="40_10vro"]
+[ext_resource type="Texture2D" uid="uid://cjdnpkfrgrkjr" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00003.png" id="41_jxy57"]
+[ext_resource type="Texture2D" uid="uid://jrf6rlsufh64" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00004.png" id="42_fosrc"]
+[ext_resource type="Texture2D" uid="uid://b66mi64hgwbls" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00005.png" id="43_kar3j"]
+[ext_resource type="Texture2D" uid="uid://bse73530kymql" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00006.png" id="44_ilmvs"]
+[ext_resource type="Texture2D" uid="uid://dbdn57q557jr5" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00007.png" id="45_7sui3"]
+[ext_resource type="Texture2D" uid="uid://ckgq4hrdnmit8" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00000.png" id="46_yliwg"]
+[ext_resource type="Texture2D" uid="uid://vq8fqvcf2elt" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00001.png" id="47_6krr3"]
+[ext_resource type="Texture2D" uid="uid://cs7beykch488" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00002.png" id="48_d57bd"]
+[ext_resource type="Texture2D" uid="uid://c7vuv7my4vyoe" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00003.png" id="49_rsyda"]
+[ext_resource type="Texture2D" uid="uid://d0kcngf4hlelj" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00004.png" id="50_xk6l0"]
+[ext_resource type="Texture2D" uid="uid://ock1cb7be6lq" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00005.png" id="51_0e8kr"]
+[ext_resource type="Texture2D" uid="uid://b1ltft1b0ubeu" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00006.png" id="52_h232d"]
+[ext_resource type="Texture2D" uid="uid://4dgpeyfp10uf" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00007.png" id="53_pas5y"]
+[ext_resource type="Texture2D" uid="uid://bedo3jgf6j018" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00008.png" id="54_hr5nd"]
+[ext_resource type="Texture2D" uid="uid://c4o221nf18y6h" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00009.png" id="55_vuab7"]
+[ext_resource type="Texture2D" uid="uid://bbswttsmyem24" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00010.png" id="56_px06g"]
+[ext_resource type="Texture2D" uid="uid://cqofnjoi2nb8m" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00011.png" id="57_xxnor"]
+[ext_resource type="Texture2D" uid="uid://1g5dtco8qs1x" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00012.png" id="58_g4exw"]
+[ext_resource type="Texture2D" uid="uid://db2k54j72rl5g" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00013.png" id="59_rj7xj"]
+[ext_resource type="Texture2D" uid="uid://lh70us12mjc7" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00014.png" id="60_b7p1v"]
+[ext_resource type="Texture2D" uid="uid://c37kdepiv24oy" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00015.png" id="61_c1gos"]
+[ext_resource type="Texture2D" uid="uid://beb6oobgsq31d" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00016.png" id="62_yuwls"]
+[ext_resource type="Texture2D" uid="uid://bs6jbq6hqnqh0" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00017.png" id="63_y2aou"]
+[ext_resource type="Texture2D" uid="uid://d0gniily3a5ko" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00018.png" id="64_68e5h"]
+[ext_resource type="Texture2D" uid="uid://feghm4ceoutk" path="res://2D-game/sprite/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00019.png" id="65_34ow1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3anyi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qhwph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nldu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7uobg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4jsij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_aurot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yrc6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_be0uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2w7lb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ggyig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cw4jy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pu7gk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lpkxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_h6udw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gbsee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ox5fu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8alyg")
+}],
+"loop": true,
+"name": &"dash2",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mewp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2x64i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y8vqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6w7r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wessi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x4mou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ksbk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4qnym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_q4qdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ydmfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_tut07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_scsrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_c5fn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x5aae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_otmrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3styn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_o7y4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mykjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_v3jkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_oe3ss")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_hf21i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_vognb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_10vro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_jxy57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_fosrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_kar3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ilmvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_7sui3")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_yliwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_6krr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_d57bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_rsyda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_xk6l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_0e8kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_h232d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_pas5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_hr5nd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_vuab7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_px06g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_xxnor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_g4exw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_rj7xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_b7p1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_c1gos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yuwls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_y2aou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_68e5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_34ow1")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 24.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gcyy0"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tnr5l"]
+radius = 5.0
+height = 18.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qa424"]
+texture = ExtResource("10_vml3k")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_43e2g"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_qa424")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3efhw"]
 atlas = ExtResource("2_0yjba")
@@ -460,51 +771,21 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gcyy0"]
-radius = 6.0
-height = 18.0
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tnr5l"]
-radius = 5.0
-height = 18.0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qa424"]
-texture = ExtResource("10_vml3k")
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-1:0/0 = 0
-1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-0:1/0 = 0
-0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:1/0/physics_layer_0/angular_velocity = 0.0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-1:1/0 = 0
-1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-1:1/0/physics_layer_0/angular_velocity = 0.0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-
-[sub_resource type="TileSet" id="TileSet_43e2g"]
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_qa424")
-
 [node name="2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 
 [node name="player" type="CharacterBody2D" parent="."]
-script = ExtResource("1_50nw3")
+position = Vector2(0, -2)
+script = ExtResource("1_ede6r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
 texture_filter = 1
 texture_repeat = 1
-sprite_frames = SubResource("SpriteFrames_nh62v")
-animation = &"left_attack"
-autoplay = "right_idle"
+sprite_frames = SubResource("SpriteFrames_3anyi")
+animation = &"jump"
+frame_progress = 0.606538
 
 [node name="Normal_Hitbox" type="CollisionShape2D" parent="player"]
 position = Vector2(0, 2)
@@ -532,3 +813,32 @@ tile_set = SubResource("TileSet_43e2g")
 format = 2
 layer_0/name = "floor"
 layer_0/tile_data = PackedInt32Array(262143, 0, 1, 196608, 0, 1, 196609, 0, 1, 196610, 0, 1, 196611, 0, 1, 196612, 0, 1, 196613, 0, 1, 196614, 0, 1, 196615, 0, 1, 196616, 0, 1, 196617, 0, 1, 262142, 0, 1, 262141, 0, 1, 262140, 0, 1, 262139, 0, 1, 262138, 0, 1, 262137, 0, 1, 262136, 0, 1, 262135, 0, 1, 262134, 0, 1, 262133, 0, 1, 262132, 0, 1, 262131, 0, 1, 262130, 0, 1, 262129, 0, 1, 262128, 0, 1, 262127, 65536, 1610612737, 196618, 65536, 1, 262154, 65536, 1342177281, 262153, 65536, 0, 327663, 65536, 805306369, 327664, 65536, 805306368)
+
+[node name="player [ARCHIVED]" type="CharacterBody2D" parent="TileMap"]
+position = Vector2(-48, -158)
+script = ExtResource("1_50nw3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileMap/player [ARCHIVED]"]
+texture_filter = 1
+texture_repeat = 1
+sprite_frames = SubResource("SpriteFrames_nh62v")
+animation = &"left_hit"
+autoplay = "right_idle"
+
+[node name="Normal_Hitbox" type="CollisionShape2D" parent="TileMap/player [ARCHIVED]"]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_gcyy0")
+debug_color = Color(0.788235, 0.929412, 1, 0.419608)
+
+[node name="Hitbox" type="CollisionShape2D" parent="TileMap/player [ARCHIVED]"]
+visible = false
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_tnr5l")
+disabled = true
+debug_color = Color(0.988235, 0, 0.305882, 0.419608)
+
+[node name="RayCast2D" type="RayCast2D" parent="TileMap/player [ARCHIVED]"]
+texture_filter = 1
+position = Vector2(0, 2)
+rotation = 1.5708
+scale = Vector2(0.5, 0.5)
