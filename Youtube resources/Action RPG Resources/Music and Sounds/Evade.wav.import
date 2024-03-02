@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b1vek8u7rxbc5"
+path="res://.godot/imported/Evade.wav-d64213a50d59ed844aa86ae0fff8d9bb.sample"
+
+[deps]
+
+source_file="res://2D-game/Youtube resources/Action RPG Resources/Music and Sounds/Evade.wav"
+dest_files=["res://.godot/imported/Evade.wav-d64213a50d59ed844aa86ae0fff8d9bb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

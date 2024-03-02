@@ -1,0 +1,9 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cbxsvewvb4kms"]
+
+[ext_resource type="Texture2D" uid="uid://cavsi3kat8dag" path="res://2D-game/sprite/mk_16_16_nature_tileset_godot/mk_16_16_nature_tileset_godot/tileset_mk_16_16_nature_tileset_godot.png" id="1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_73m1j"]
+texture = ExtResource("1")
+
+[resource]
+sources/11 = SubResource("TileSetAtlasSource_73m1j")

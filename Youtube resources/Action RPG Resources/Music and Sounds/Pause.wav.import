@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://blkspx3csyp0m"
+path="res://.godot/imported/Pause.wav-285a646b8af9426b21be6649bca2927c.sample"
+
+[deps]
+
+source_file="res://2D-game/Youtube resources/Action RPG Resources/Music and Sounds/Pause.wav"
+dest_files=["res://.godot/imported/Pause.wav-285a646b8af9426b21be6649bca2927c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
